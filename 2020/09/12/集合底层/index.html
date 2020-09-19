@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives: 2020/9 | Hexo</title>
+  <title>Hexo</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -167,96 +167,121 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p></p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2020/09/19/String类为什么是被final修饰的？/">String类为什么是被final修饰的</a></h4>
-                            
-                            <p><time datetime="2020-09-19T02:16:09.466Z"><a href="/2020/09/19/String类为什么是被final修饰的？/">2020-09-19</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2020/09/19/hello/">hello</a></h4>
-                            
-                            <p><time datetime="2020-09-18T16:03:43.000Z"><a href="/2020/09/19/hello/">2020-09-19</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2020/09/18/hello-world/">Hello World</a></h4>
-                            
-                            <p><time datetime="2020-09-18T15:09:30.568Z"><a href="/2020/09/18/hello-world/">2020-09-18</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2020/09/12/集合底层/"></a></h4>
-                            
-                            <p><time datetime="2020-09-12T08:38:52.422Z"><a href="/2020/09/12/集合底层/">2020-09-12</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2020-09-12T08:38:52.422Z" itemprop="datePublished">
+          2020-09-12
+      </time>
+    
+</span>
+                <h1></h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<hr>
+<h2 id="集合底层-——未完待续"><a href="#集合底层-——未完待续" class="headerlink" title="集合底层 ——未完待续"></a>集合底层 ——未完待续</h2><h1 id="集合底层"><a href="#集合底层" class="headerlink" title="集合底层"></a>集合底层</h1><p>集合框架是一套接口统一、并实现特定算法、统一处理对象组的框架。<br> | - Collection<br> |           |<br> |           | - List(允许重复)<br> |           |     | - ArrayList<br> |           |     | - LinkedList<br> |           |<br> |           | - Set（不允许重复）<br> |                | - HashSet<br> |                | - LinkedHashSet<br> |                | - TreeSet<br> |<br> | - Map<br>      | - HashMap<br>      | - LinkedHashMap<br>      | - TreeMap</p>
+<h2 id="ArrayList底层解释"><a href="#ArrayList底层解释" class="headerlink" title="ArrayList底层解释"></a>ArrayList底层解释</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//类所在位置   java.util.ArrayList;</span></span><br></pre></td></tr></table></figure>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>加油 ~ ~ ~ 铁子！！！</p>
+<h3 id="1、简介及优缺点"><a href="#1、简介及优缺点" class="headerlink" title="1、简介及优缺点"></a>1、简介及优缺点</h3><p>ArrayList是最常用的List实现类，内部是通过数组实现的。</p>
+<blockquote>
+<p>数据结构中说：数组可以看做成一种拓展的线性数据结构，他的特殊性不像栈和队列那样翻译在对数据元素的操作方面受限，而是反应在数据元素的构成上。从组成线性表的元素角度来看，数组具有某种结构的数据元素构成，<strong>数组就是线性表的推广</strong></p>
+</blockquote>
+<p>优点：</p>
+<p>1、操作读取操作效率高，因为是基于数组实现的，可以为null值，可以允许元素重复，并且有序，异步。</p>
+<blockquote>
+<p>数组支持随机访问，根据下标（索引位置）随机访问的时间复杂度是O(1)</p>
+</blockquote>
+<p>2、在数组的基础上封装了对元素的操作方法。</p>
+<p>3、可以自动扩容</p>
+<blockquote>
+<p>初次调用add方法，数组的初始容量为10，每次数组容量不够用时，将数组的大小扩展为原来的1.5倍，然后再将原来的元素添加早扩容后的数组中</p>
+<p>源码（通过这个判断ArrayList是否需要扩容）：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(minCapacity - elementData.length &gt; <span class="number">0</span>)</span><br><span class="line">         grow(minCapacity);</span><br></pre></td></tr></table></figure>
+
+<p>扩容原理源码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> newCapacity = oldCapacity + (oldCapacity &gt;&gt; <span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+
+<p>原来长度的一半加上原长度，也就是1.5倍<code>oldCapacity &gt;&gt; 1</code>右移运算符）</p>
+<p><img src="https://i.loli.net/2020/09/19/ARdkuabVKh1OpIC.gif" alt="whXvE6"></p>
+</blockquote>
+<p>缺点：</p>
+<p>1、插入和删除的效率比较低</p>
+<p>2、根据内容查找元素的效率较低</p>
+<blockquote>
+<p>数组扩容是对ArrayList效率影响比较大的一个因素，每当执行Add，AddRange，Insert，InsertRange等添加元素的方法时，都会检查内部数组的内容是否够了，如果不够他会以当前容量的1.5倍来重新构建一个数组，将就得元素Copy到新的数组中，然后丢弃旧的数组。</p>
+</blockquote>
+<p>注：在JDK8以前ArrayList的默认长度是10，但是在JDK8之后的版本优化了，将默认长度修改为0。挡我们首次添加元素，需要分配数组空间是，JDK会自动伴我们进行扩容操作，将初始的数组长度扩容成了10。这样做有效的降低了无用内存的占用，他利用数组扩容的特效来完成集合的这些操作， 这也是ArrayList集合查询快，增删慢的原因 了。</p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    <a class="pull-left" href="/2020/09/18/hello-world/" style="float: left;">
+        ← Hello World
+    </a>
+    
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
