@@ -201,7 +201,9 @@
 <p>JDK9之前的源码是<code>private final char value[];</code></p>
 <p>char占用16位（2字节）。在这种情况下我们如果要存储一个字符A的话就是<code>0x00 0x41</code>,这个时候前面的<code>0x00</code>就浪费了。也就是保存<code>ISO-8859-1</code>编码内的字符就会浪费，反之则不会（比如中文字符）。</p>
 <p>byte占用8位（1字节）源码为<code>private final byte[] value</code></p>
+<blockquote>
 <p>注释：Integer、Long、Double…这些包装类也是final的。</p>
+</blockquote>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
